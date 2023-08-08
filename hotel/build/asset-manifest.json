@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.abc2667c.css",
+    "main.js": "/static/js/main.fe9cba66.js",
+    "static/js/787.48a3adfe.chunk.js": "/static/js/787.48a3adfe.chunk.js",
+    "static/media/hotel.jpg": "/static/media/hotel.810f9f0435cc7ad7210d.jpg",
+    "static/media/discount2-image2.jpg": "/static/media/discount2-image2.f88a348bc972623586b1.jpg",
+    "static/media/discount1-image3.jpg": "/static/media/discount1-image3.5052767f7bfc889e65ed.jpg",
+    "static/media/discount4-image2.jpg": "/static/media/discount4-image2.864a377a808ff7010138.jpg",
+    "static/media/discount4-image1.jpg": "/static/media/discount4-image1.48bdedcb3f1d055dcb35.jpg",
+    "static/media/discount1-image2.jpg": "/static/media/discount1-image2.89b45594e5b738236d24.jpg",
+    "static/media/discount4-image3.jpg": "/static/media/discount4-image3.53daac71186f7dbf8171.jpg",
+    "static/media/discount3-image3.jpg": "/static/media/discount3-image3.5516cbf173d0d71b460d.jpg",
+    "static/media/discount1-image1.jpg": "/static/media/discount1-image1.5560f5eebd1441b301f8.jpg",
+    "static/media/discount2-image3.jpg": "/static/media/discount2-image3.124233e8998dca9c9098.jpg",
+    "static/media/discount3-image2.jpg": "/static/media/discount3-image2.0fcd317cb7baa6fb54f2.jpg",
+    "static/media/discount2-image1.jpg": "/static/media/discount2-image1.d9adced95d1ca721e7e2.jpg",
+    "static/media/discount3-image1.jpg": "/static/media/discount3-image1.2120106da78d096435d5.jpg",
+    "static/media/i1.jpeg": "/static/media/i1.793488afabbe9a43798d.jpeg",
+    "static/media/i2.jpeg": "/static/media/i2.4baa27920b5b1ab74ad7.jpeg",
+    "static/media/i4.jpeg": "/static/media/i4.d028b960a1f5cdfa821d.jpeg",
+    "static/media/i3.jpeg": "/static/media/i3.7e8e63d8e0ab3f10e5a5.jpeg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.abc2667c.css.map": "/static/css/main.abc2667c.css.map",
+    "main.fe9cba66.js.map": "/static/js/main.fe9cba66.js.map",
+    "787.48a3adfe.chunk.js.map": "/static/js/787.48a3adfe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abc2667c.css",
+    "static/js/main.fe9cba66.js"
+  ]
+}

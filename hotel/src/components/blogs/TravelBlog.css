@@ -1,0 +1,92 @@
+/* TravelBlog.css */
+
+.travel-blog-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.blog-card {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  /* Adjust card width as needed */
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  /* Add some margin between cards */
+}
+
+.firstrow {
+  margin-bottom: 80px;
+}
+
+.blog-card:hover {
+  transform: scale(1.05);
+  /* Apply a slight scale effect on hover */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  /* Update box shadow on hover */
+}
+
+.blog-card img {
+  width: 100%;
+  height: 300px;
+  /* Adjust card image height as needed */
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+  /* Rounded corners for the top of the image */
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Transparent black overlay */
+  color: #fff;
+  padding: 20px;
+  transform: translateY(100%);
+  /* Initially move overlay below the card */
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover .card-overlay {
+  transform: translateY(60%);
+  /* Move overlay up on hover */
+}
+
+.card-overlay h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.card-overlay h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.card-overlay h5 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card-overlay p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .blog-card {
+    max-width: 100%;
+    flex-basis: calc(50% - 10px);
+    /* Show two cards in each row with some gap */
+  }
+  .container{
+    max-width: 100%;
+  }
+}

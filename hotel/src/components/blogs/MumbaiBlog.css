@@ -1,0 +1,104 @@
+.mumbai-blog {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 100px;
+  }
+  
+  .blog-title {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .mumbai-blog p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #c0bebe;
+  }
+  
+  .img-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .img-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .related-blogs {
+    margin-top: 30px;
+  }
+  
+  .related-blogs h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .related-blogs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .related-blogs li {
+    margin-bottom: 10px;
+  }
+  
+  .related-blogs li a {
+    display: block;
+    font-size: 18px;
+    color: #666;
+    /* text-decoration: none; */
+    transition: color 0.3s ease;
+  }
+  
+  .related-blogs li a:hover {
+    color: #333;
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  @media (max-width: 600px) {
+    .mumbai-blog {
+      padding: 10px;
+    }
+  
+    .blog-title {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+  
+    .section-title {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+  
+    .mumbai-blog p {
+      font-size: 14px;
+    }
+  
+    .img-container {
+      margin-bottom: 15px;
+    }
+  
+    .related-blogs h2 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+  
+    .related-blogs li a {
+      font-size: 16px;
+    }
+  }
+  

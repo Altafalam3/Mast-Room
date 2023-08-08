@@ -1,0 +1,92 @@
+/* BookingForm.css */
+
+.booking-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+}
+
+.booking-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.booking-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Additional Styles for Modal Overlay */
+
+.booking-form.modal-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.booking-form.modal-open .booking-form-content {
+  position: relative;
+  z-index: 11;
+}
+
+.booking-form.modal-open .booking-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.date-box{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.date-box label{
+  padding-bottom: 5px;
+}
+
+.date-box-format{
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+}
+
+.payment-method-box {
+  margin-bottom: 15px;
+}
+
+.payment-method-box label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.payment-method-box input[type='radio'] {
+  margin-right: 8px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.payment-method-box input[type='radio']:focus {
+  outline: none;
+  box-shadow: 0 0 2px #333;
+}

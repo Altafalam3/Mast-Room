@@ -1,0 +1,61 @@
+/* MyTripsPage.css */
+
+.my-trips-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  
+  
+  .my-trips-page__trip-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .my-trips-page__trip-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .my-trips-page__trip-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .my-trips-page__trip-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .my-trips-page__trip-details {
+    padding: 15px;
+  }
+  
+  .my-trips-page__trip-destination {
+    color: #24416b;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .my-trips-page__trip-date {
+    color: #777;
+    margin-bottom: 5px;
+  }
+  
+  .my-trips-page__trip-duration {
+    color: #24416b;
+    font-size: 18px;
+  }
+  
+  .drop_down{
+    height: 30vh;
+    margin-bottom: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  }

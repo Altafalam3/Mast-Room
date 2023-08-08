@@ -1,0 +1,134 @@
+.blog .container {
+   /* max-width: 87%;
+   margin: auto;
+   padding-bottom: 90px; */
+}
+
+.blog .grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 30px;
+}
+
+.blog .mtop {
+   margin-top: 40px;
+}
+
+.blog .heading h2 {
+   text-align: center;
+   color: #24416B;
+   font-size: 45px;
+   font-family: serif;
+   font-weight: bold;
+   margin: 10px 0 20px 0;
+}
+
+.blog .box h3 {
+   font-size: 20px;
+   font-family: serif;
+   color: #24416B;
+   margin-bottom: 20px;
+   margin: 15px 0;
+}
+
+.blog p {
+   line-height: 30px;
+   color: #a4a4a4;
+   font-size: 15px;
+   margin-bottom: 10px;
+}
+
+.blog .box {
+   box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+   transition: 0.5s;
+}
+
+.blog .box:hover {
+   transform: translateY(-10px);
+   cursor: pointer;
+}
+
+.blog .text {
+   padding: 20px;
+}
+
+.blog .img {
+   position: relative;
+   overflow: hidden;
+   height: 250px;
+}
+
+.blog img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.blog span {
+   position: absolute;
+   top: -3%;
+   left: -12%;
+   z-index: 1;
+   color: white;
+   background: #CC8C18;
+   padding: 25px 50px 20px 50px;
+   transform: rotate(-45deg);
+   font-size: 14px;
+}
+
+.blog .icon {
+   margin-right: 10px;
+   color: #CC8C18;
+}
+
+.blog .icon label {
+   color: black;
+}
+
+.blog a {
+   color: #CC8C18;
+   font-size: 15px;
+   text-decoration: none;
+}
+
+.blog .right-arr {
+   padding-top: 8px;
+   font-size: 20px;
+}
+
+@media only screen and (max-width:768px) {
+   .blog .grid {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .blog .container {
+      margin: 0;
+      padding: 5px;
+      max-width: 100%;
+   }
+
+   .blog span {
+      display: none;
+   }
+}
+
+@media only screen and (max-width:512px) {
+   .blog .grid {
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .blog img {
+      width: 100%;
+      height: 100%;
+      padding: 5px;
+   }
+
+   .blog .container {
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+   }
+}
