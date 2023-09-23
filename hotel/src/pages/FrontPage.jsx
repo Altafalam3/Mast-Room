@@ -15,6 +15,8 @@ const FrontPage = () => {
       <div className="hero-container">
         <div>
           <h1>Unforgettable Last-Minute <br /> Hotel Getaways</h1>
+          {/* <div id="google_translate_element"></div> */}
+
         </div>
         <div>
           <SearchBar />

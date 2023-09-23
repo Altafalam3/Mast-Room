@@ -36,10 +36,27 @@ export const login = async (req, res, next) => {
         const isPasswordCorrect = await bcrypt.compare(req.body.password, user.password);
         if (!isPasswordCorrect)
             return next(createError(400, "Wrong password"));
-        const token = jwt.sign({ id: user._id, isAdmin: user.isAdmin },process.env.JWT);
-        const { password, isAdmin, ...otherDetails } = user._doc;
 
-        res.cookie("access_token", token, { httpOnly: true }).status(200).json({ details: { ...otherDetails }, isAdmin });
+        const token = jwt.sign(
+            {
+                id: user._id,
+                isAdmin: user.isAdmin
+            },
+            process.env.JWT,
+            {
+                expiresIn: "1h"
+            }
+        );
+
+        const { password, isAdmin, ...otherDetails } = user._doc;
+        
+        const option = {
+            expires: new Date(Date.now() + 1000 * 60 * 60 *6),
+            httpOnly: true
+        }
+
+
+        res.status(200).cookie("access_token", token, option).json({ details: { ...otherDetails }, isAdmin });
     } catch (err) {
         next(err);
     }
@@ -79,7 +96,7 @@ export const checkLoggedIn = (req, res) => {
                 return res.status(404).json({ loggedIn: false, error: 'User not found' });
             }
             // If the token is valid and the user is found, return user data along with loggedIn: true
-            const { _id , name, email, phone} = user;
+            const { _id, name, email, phone } = user;
             res.status(200).json({ loggedIn: true, user: { _id, name, email, phone } });
         } catch (error) {
             // Handle any errors that occurred during the database query

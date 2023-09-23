@@ -45,6 +45,7 @@ const Navbar = () => {
             Contact Us
           </NavLink>
         </div>
+
         <div className="navbar-profile" onClick={toggleProfileDropdown}>
           <i className="fas fa-user"></i>
           <div className={`navbar-profile-dropdown ${isProfileOpen ? 'active' : ''}`}>
